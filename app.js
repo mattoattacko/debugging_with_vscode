@@ -38,7 +38,7 @@ app.get('/:userString', (request, response) => {
   //Reverse the string back
   const reversed = reverseString(original);
   //Send to view
-  response.render('reverse', {reversed});
+  response.render('reverse', {original, reversed});
 });
 
 // catch 404 and forward to error handler
